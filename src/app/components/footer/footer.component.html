@@ -1,83 +1,105 @@
 <footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="container_information">
-                <div class="company">
-                    <div class="title">
-                        <p>Multimagem Eventos</p>
-                    </div>
-                    <div class="address">
-                        <p> Galeria Comercial da Estação CP Ermesinde, Loja 15,</p>
-                        <p>4445-276</p>
-                        <p>Ermesinde (Valongo)</p>
-                    </div>
-                </div>
-                <div class="contacts">
-                    <div class="tel">
-                        <div class="logo">
-                            <img ngSrc = './assets/telemovel.png' width="20" height="20">
-                        </div>
-                        <div class="info">
-                            <p>969 037 919</p>
-                        </div>
-                        <small>chamada para rede móvel nacional</small>
-                    </div>
-                    <div class="telf">
-                        <div class="logo">
-                            <img ngSrc = './assets/telefone.png' width="20" height="20">
-                        </div>
-                        <div class="info">
-                            <p>229 739 222</p>
-                        </div>
-                        <small>chamada para rede móvel nacional</small>
-                    </div>
-                </div>
-                <div class="social_media">
-                    <div class="inst">
-                        <div class="logo">
-                            <a href="https://www.instagram.com/multimagem.eventos/"><img ngSrc = './assets/instagram.png' width="32" height="32"></a>
-                        </div>
-                    </div>
-                    <div class="face">
-                        <div class="logo">
-                            <a href="https://www.facebook.com/profile.php?id=100032353406920" target="_blank"><img ngSrc = './assets/facebook.png' width="32" height="32"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="working_period">
-                <div class="title">
-                    <p>Funcionamento</p>
-                </div>
-                <div class="information">
-                    <p>Seg a Sex: 09:30-19:30</p>
-                    <p>Sab: 09:30-13:00</p>
-                    <p>Dom: Encerrado</p>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="title">
-                    <p>Menu</p>
-                </div>
-                <div class="information">
-                    <nav>
-                        <ul>
-                            <li><a routerLink="/about">Sobre nós</a></li>
-                            <li><a routerLink="/about">Eventos</a></li>
-                            <li><a routerLink="/about">Serviços</a></li>
-                            <li><a routerLink="/about">Veículos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.183216443856!2d-8.558432009811336!3d41.217777632564456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246143c786a5ed%3A0x3fbdd19dd2c8281f!2s4445-276%20Ermesinde!5e0!3m2!1spt-PT!2spt!4v1720064437119!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="menu">
+        <div class="title">
+          <p><strong>Menu</strong></p>
         </div>
-        <div class="copyright">
-            <hr style="border-bottom: 1px solid black;">
-            <p>© {{currentYear}} Multimagem. Todos os direitos reservados.</p>
+        <div class="menu_information">
+          <nav>
+            <ul>
+              <li><a routerLink="/about">Sobre nós</a></li>
+              <li><a routerLink="/about">Eventos</a></li>
+              <li><a routerLink="/about">Serviços</a></li>
+              <li><a routerLink="/about">Veículos</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
+      <div class="company">
+        <div class="title">
+          <p><strong>Localização</strong></p>
+        </div>
+        <div class="address">
+          <p>Galeria Comercial da Estação CP Ermesinde, Loja 15,</p>
+          <p>4445-276</p>
+          <p>Ermesinde (Valongo)</p>
+        </div>
+      </div>
+      <div class="working_period">
+        <div class="title">
+          <p><strong>Funcionamento</strong></p>
+        </div>
+        <div class="information">
+          <p>Seg a Sex: 09:30-19:30</p>
+          <p>Sab: 09:30-13:00</p>
+          <p>Dom: Encerrado</p>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="title">
+          <p><strong>Contactos</strong></p>
+        </div>
+        <div class="logos_contacts">
+          <div class="tel">
+            <div class="logo">
+              <img src="./assets/telemovel.png" width="20" height="20" />
+            </div>
+            <div class="info">
+              <p>969 037 919</p>
+              <small>chamada para rede móvel nacional</small>
+            </div>
+          </div>
+          <div class="telf">
+            <div class="logo">
+              <img src="./assets/telefone.png" width="20" height="20" />
+            </div>
+            <div class="info">
+              <p>229 739 222</p>
+              <small>chamada para rede móvel nacional</small>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.183216443856!2d-8.558432009811336!3d41.217777632564456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246143c786a5ed%3A0x3fbdd19dd2c8281f!2s4445-276%20Ermesinde!5e0!3m2!1spt-PT!2spt!4v1720064437119!5m2!1spt-PT!2spt"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="social_media">
+      <div class="logos_social_media">
+        <div class="inst">
+          <div class="logo">
+            <a
+              href="https://www.instagram.com/multimagem.eventos/"
+              target="_blank"
+            >
+              <img src="./assets/instagram.png" width="32" height="32" />
+            </a>
+          </div>
+        </div>
+        <div class="face">
+          <div class="logo">
+            <a
+              href="https://www.facebook.com/profile.php?id=100032353406920"
+              target="_blank"
+            >
+              <img src="./assets/facebook.png" width="32" height="32" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <hr style="border-bottom: 1px solid black" />
+      <p>© {{ currentYear }} Multimagem. Todos os direitos reservados.</p>
+    </div>
+  </div>
 </footer>
