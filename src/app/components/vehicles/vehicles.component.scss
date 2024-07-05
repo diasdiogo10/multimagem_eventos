@@ -1,0 +1,13 @@
+.container_vehicle {
+  display: flex;
+}
+
+.information {
+  max-width: 50%;
+}
+
+#vehicles .container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
