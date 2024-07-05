@@ -3,24 +3,33 @@ footer {
   width: 100%;
   margin-top: 45px;
   margin-bottom: 15px;
-  .container {
-    padding: 0 15px;
-  }
 }
 
 .title {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
+.overline hr {
+  border-bottom: 1px solid black;
+  margin-top: 75px;
+}
+
 .copyright {
-  margin-top: 100px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  text-align: center;
-  hr {
-    margin-bottom: 15px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.content_copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 15px;
 }
 
 .row {
@@ -41,26 +50,17 @@ footer {
   flex-direction: column;
 }
 
-.tel,
-.telf {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
 .social_media {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  .logos_social_media {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-  }
+  justify-content: center;
+  gap: 15px;
 }
 
 .map {
-  margin-block: 15px;
+  margin-top: 15px;
+  iframe {
+    border-radius: 15px;
+  }
 }
 
 .company,
@@ -72,18 +72,6 @@ footer {
   }
 }
 
-.logos_contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.logos_social_media {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.menu_information nav ul li a {
-  text-decoration: underline;
+.tel {
+  margin-bottom: 15px;
 }

@@ -1,16 +1,29 @@
 import { Routes } from '@angular/router';
-import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { VehiclesComponent } from './components/vehicles/vehicles.component';
+import { ServicesComponent } from './components/services/services.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 export const routes: Routes = [
-    {
-        path: "",
-        component: HomeComponent
-    },
-    {
-        path: "about",
-        component: AboutComponent
-    }
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'sobre',
+    component: AboutComponent,
+  },
+  {
+    path: 'veiculos',
+    component: VehiclesComponent,
+  },
+  {
+    path: 'servicos',
+    component: ServicesComponent,
+  },
+  {
+    path: 'galeria',
+    component: GalleryComponent,
+  },
 ];

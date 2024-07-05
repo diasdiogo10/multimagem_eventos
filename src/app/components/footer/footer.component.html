@@ -1,34 +1,33 @@
 <footer id="footer">
   <div class="container">
     <div class="row">
-      <div class="menu">
-        <div class="title">
-          <p><strong>Menu</strong></p>
-        </div>
-        <div class="menu_information">
-          <nav>
-            <ul>
-              <li><a routerLink="/about">Sobre nós</a></li>
-              <li><a routerLink="/about">Eventos</a></li>
-              <li><a routerLink="/about">Serviços</a></li>
-              <li><a routerLink="/about">Veículos</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
       <div class="company">
         <div class="title">
-          <p><strong>Localização</strong></p>
+          <div class="logo">
+            <img ngSrc="./assets/pin.png" width="20" height="20" />
+          </div>
+          <div>
+            <p><strong>Localização</strong></p>
+          </div>
         </div>
         <div class="address">
-          <p>Galeria Comercial da Estação CP Ermesinde, Loja 15,</p>
+          <p>Galeria Comercial da Estação CP Ermesinde, Loja 15</p>
           <p>4445-276</p>
           <p>Ermesinde (Valongo)</p>
         </div>
       </div>
       <div class="working_period">
         <div class="title">
-          <p><strong>Funcionamento</strong></p>
+          <div class="logo">
+            <img
+              ngSrc="./assets/horario-de-funcionamento.png"
+              width="20"
+              height="20"
+            />
+          </div>
+          <div>
+            <p><strong>Horário</strong></p>
+          </div>
         </div>
         <div class="information">
           <p>Seg a Sex: 09:30-19:30</p>
@@ -38,27 +37,20 @@
       </div>
       <div class="contacts">
         <div class="title">
-          <p><strong>Contactos</strong></p>
+          <div class="logo">
+            <img ngSrc="./assets/contactos.png" width="20" height="20" />
+          </div>
+          <div>
+            <p><strong>Contactos</strong></p>
+          </div>
         </div>
-        <div class="logos_contacts">
-          <div class="tel">
-            <div class="logo">
-              <img src="./assets/telemovel.png" width="20" height="20" />
-            </div>
-            <div class="info">
-              <p>969 037 919</p>
-              <small>chamada para rede móvel nacional</small>
-            </div>
-          </div>
-          <div class="telf">
-            <div class="logo">
-              <img src="./assets/telefone.png" width="20" height="20" />
-            </div>
-            <div class="info">
-              <p>229 739 222</p>
-              <small>chamada para rede móvel nacional</small>
-            </div>
-          </div>
+        <div class="tel">
+          <p>969 037 919</p>
+          <small>chamada para rede móvel nacional</small>
+        </div>
+        <div class="telf">
+          <p>229 739 222</p>
+          <small>chamada para rede móvel nacional</small>
         </div>
       </div>
     </div>
@@ -73,33 +65,37 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <div class="social_media">
-      <div class="logos_social_media">
-        <div class="inst">
-          <div class="logo">
-            <a
-              href="https://www.instagram.com/multimagem.eventos/"
-              target="_blank"
-            >
-              <img src="./assets/instagram.png" width="32" height="32" />
-            </a>
-          </div>
+    <div class="copyright">
+      <div class="overline">
+        <hr />
+      </div>
+      <div class="content_copyright">
+        <div class="text_copyright">
+          <p>© {{ currentYear }} Multimagem. Todos os direitos reservados.</p>
         </div>
-        <div class="face">
-          <div class="logo">
-            <a
-              href="https://www.facebook.com/profile.php?id=100032353406920"
-              target="_blank"
-            >
-              <img src="./assets/facebook.png" width="32" height="32" />
-            </a>
+        <div class="social_media">
+          <div class="inst">
+            <div class="logo">
+              <a
+                href="https://www.instagram.com/multimagem.eventos/"
+                target="_blank"
+              >
+                <img src="./assets/instagram.png" width="25" height="25" />
+              </a>
+            </div>
+          </div>
+          <div class="face">
+            <div class="logo">
+              <a
+                href="https://www.facebook.com/profile.php?id=100032353406925"
+                target="_blank"
+              >
+                <img src="./assets/facebook.png" width="25" height="25" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="copyright">
-      <hr style="border-bottom: 1px solid black" />
-      <p>© {{ currentYear }} Multimagem. Todos os direitos reservados.</p>
     </div>
   </div>
 </footer>
