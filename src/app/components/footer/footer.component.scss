@@ -1,8 +1,9 @@
 footer {
   display: block;
   width: 100%;
-  margin-top: 45px;
-  margin-bottom: 15px;
+  padding-block: 15px;
+  background-color: #014181;
+  color: white;
 }
 
 .title {
@@ -74,4 +75,8 @@ footer {
 
 .tel {
   margin-bottom: 15px;
+}
+
+.information p {
+  padding-block: 5px;
 }

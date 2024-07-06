@@ -1,13 +1,18 @@
+#vehicles {
+  margin-block: 30px;
+}
+
 .container_vehicle {
   display: flex;
-}
-
-.information {
-  max-width: 50%;
-}
-
-#vehicles .container {
-  display: flex;
-  flex-direction: column;
-  gap: 45px;
+  flex-direction: row;
+  .information {
+    width: 50%;
+  }
+  .gallery {
+    width: 50%;
+  }
+  img {
+    width: 100%;
+    height: 400px;
+  }
 }
