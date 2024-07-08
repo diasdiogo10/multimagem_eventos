@@ -1,9 +1,10 @@
 section.gallery {
+  background-color: #bfdfff;
     .container {
       h1 {
         font-size: 30px;
         color: #014181;
-        margin-block: 30px;
+        padding-block: 30px;
       }
       hr {
         margin-top: 15px;
@@ -13,7 +14,7 @@ section.gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        padding: 20px;
+        padding-block: 20px;
   
         .image {
             display: flex;
@@ -23,7 +24,7 @@ section.gallery {
             position: relative;
           img {
             width: 100%;
-            height: auto;
+            height: 100%;
             display: block;
             border-radius: 10px;
           }
@@ -35,8 +36,9 @@ section.gallery {
 .gallery_container .image:nth-child(4) {
     grid-column: span 2;
 }
-.gallery_container .image:nth-child(7) {
-    grid-column: span 2;
+.gallery_container .image:nth-child(10) {
+  grid-column: span 2;
 }
+
 
   
