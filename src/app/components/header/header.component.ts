@@ -22,4 +22,8 @@ export class HeaderComponent {
     this.smoothScrollService.scrollToAnchor('contactForm');
   }
 
+  scrollToAboutSection(): void {
+    this.smoothScrollService.scrollToAnchor('about_section');
+  }
+
 }
