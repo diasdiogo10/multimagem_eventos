@@ -1,1 +1,39 @@
-
+<section id="form_section">
+  <div class="container">
+    <div class="title">
+      <p>Peça</p>
+      <p>o seu</p>
+      <p>Orçamento</p>
+      <p>Gratuitamente</p>
+    </div>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" #contactFormElement>
+      <div class="title_form">
+        <p><strong>Preencha com os seus dados</strong></p>
+      </div>
+      <div class="inputs">
+        <div class="input">
+          <label for="name"><strong>Nome</strong></label>
+          <input id="name" formControlName="name" type="text" placeholder="Digite o seu nome...">
+          <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)">
+            <small>Nome é obrigatório</small>
+          </div>
+        </div>
+        <div class="input">
+          <label for="email"><strong>Email</strong></label>
+          <input id="email" formControlName="email" type="email" placeholder="Digite o seu email...">
+          <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)">
+            <small>Email inválido</small>
+          </div>
+        </div>
+        <div class="input">
+          <label for="message"><strong>Mensagem</strong></label>
+          <textarea id="message" formControlName="message" placeholder="Digite a sua mensagem..." rows="5"></textarea>
+          <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)">
+            <small>Mensagem é obrigatória</small>
+          </div>
+        </div>
+      </div>
+      <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+    </form>
+  </div>
+</section>

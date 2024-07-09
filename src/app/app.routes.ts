@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { VehiclesComponent } from './components/vehicles/vehicles.component';
 import { ServicesComponent } from './components/services/services.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 export const routes: Routes = [
   {

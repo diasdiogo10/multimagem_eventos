@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common'
 import { RouterLink, RouterOutlet, Router } from '@angular/router';
+import { SmoothScrollService } from '../../smooth-scroll.service';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -14,5 +16,10 @@ import { RouterLink, RouterOutlet, Router } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  constructor(private smoothScrollService: SmoothScrollService) {}
+
+  scrollToContactForm(): void {
+    this.smoothScrollService.scrollToAnchor('contactForm');
+  }
 
 }
