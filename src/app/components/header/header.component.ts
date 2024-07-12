@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common'
+import { NgOptimizedImage } from '@angular/common';
 import { RouterLink, RouterOutlet, Router } from '@angular/router';
 import { SmoothScrollService } from '../../smooth-scroll.service';
 import { ViewportScroller } from '@angular/common';
@@ -7,13 +7,9 @@ import { ViewportScroller } from '@angular/common';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [
-    NgOptimizedImage,
-    RouterLink, 
-    RouterOutlet,
-  ],
+  imports: [NgOptimizedImage, RouterLink, RouterOutlet],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   constructor(private smoothScrollService: SmoothScrollService) {}
@@ -26,4 +22,7 @@ export class HeaderComponent {
     this.smoothScrollService.scrollToAnchor('about_section');
   }
 
+  scrollToVehiclesSection(): void {
+    this.smoothScrollService.scrollToAnchor('vehicles_section');
+  }
 }

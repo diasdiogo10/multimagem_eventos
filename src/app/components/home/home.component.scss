@@ -8,67 +8,91 @@
   opacity: 0.4;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1.1em;
-  color: #fff;
-  background-color: #9e0534;
-  border-radius: 10px;
-  transition: background-color 0.3s;
-
-  &:hover {
-      background-color: #014181;
-  }
-}
-
-#about_section{
+#about_section {
   background-color: #bfdfff;
   padding: 30px;
-  .container{
-    padding-block:60px;
-    p{
+  .container {
+    padding-block: 60px;
+    p {
       font-size: 30px;
       color: #014181;
       margin-bottom: 30px;
     }
+    .btn {
+      display: inline-block;
+      padding: 15px 20px;
+      font-size: 1.1em;
+      color: #fff;
+      background-color: #9e0534;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #014181;
+      }
+    }
   }
 }
 
-#vehicles_section{
+#vehicles_section {
   background-color: #014181;
   padding: 30px;
-  .container{
+  .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 90px;
-    justify-items: center;
-    text-align: center;
-    .item{
+    gap: 75px;
+    padding-block: 60px;
+    .item {
       display: flex;
       flex-direction: column;
       gap: 20px;
       padding: 15px;
       border-radius: 10px;
       background-color: #014181;
-      .name{
-        p{
+      .name {
+        p {
           color: #bfdfff;
-          background-color: #9e0534;
-          padding: 10px 20px;
-          border-radius: 10px;
-          font-size: 30px;
-          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 35px;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
           text-transform: uppercase;
+          text-align: left;
+          span {
+            font-size: 40px;
+          }
         }
       }
-      .image{
-        img{
+      .image {
+        height: 270px;
+        img {
           width: 100%;
           height: 100%;
           border-radius: 20px;
+          object-fit: cover;
+        }
+      }
+      .button_class {
+        .btn {
+          display: inline-block;
+          width: 100%;
+          padding: 15px 20px;
+          font-size: 1.1em;
+          text-align: center;
+          color: #fff;
+          background-color: #9e0534;
+          border-radius: 10px;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #014181;
+          }
+        }
+      }
+      .services {
+        p {
+          color: white;
+          text-align: left;
         }
       }
     }
   }
-  }
+}
