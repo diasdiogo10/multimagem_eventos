@@ -7,9 +7,14 @@ import { RouterLink, RouterOutlet, Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, ContactFormComponent, FooterComponent, RouterLink, RouterOutlet],
+  imports: [
+    HeaderComponent,
+    ContactFormComponent,
+    FooterComponent,
+    RouterLink,
+    RouterOutlet,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-}
+export class HomeComponent {}

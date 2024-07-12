@@ -26,9 +26,10 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/swiper/swiper-bundle.min.css",
+              "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": ["node_modules/aos/dist/aos.js"],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -86,9 +87,10 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/swiper/swiper-bundle.min.css",
+              "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/aos/dist/aos.js"]
           }
         }
       }
