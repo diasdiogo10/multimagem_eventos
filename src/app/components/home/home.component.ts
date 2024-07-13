@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
@@ -16,5 +16,6 @@ import { RouterLink, RouterOutlet, Router } from '@angular/router';
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeComponent {}
