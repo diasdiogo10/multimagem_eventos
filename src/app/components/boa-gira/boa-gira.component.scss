@@ -1,0 +1,32 @@
+.apresentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 45px;
+  .details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .video {
+    width: 50%;
+    video {
+      width: 100%;
+    }
+  }
+}
+
+.media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px;
+  padding-block: 120px;
+  .image {
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}
