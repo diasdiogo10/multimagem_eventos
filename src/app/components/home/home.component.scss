@@ -10,7 +10,6 @@
 
 #about_section {
   background-color: #bfdfff;
-  padding: 30px;
   .container {
     padding-block: 60px;
     p {
@@ -18,29 +17,14 @@
       color: #014181;
       margin-bottom: 30px;
     }
-    .btn {
-      display: inline-block;
-      padding: 15px 20px;
-      font-size: 1.1em;
-      color: #fff;
-      background-color: #9e0534;
-      border-radius: 10px;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #014181;
-      }
-    }
   }
 }
 
 #vehicles_section {
   background-color: #014181;
-  padding: 30px;
   .container {
     .title {
       color: #bfdfff;
-      padding: 15px;
       p {
         font-size: 35px;
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -55,13 +39,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 75px;
-      padding-block: 30px;
+      padding-block: 45px;
       .item {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 15px;
-        border-radius: 10px;
         background-color: #014181;
         .name {
           p {
@@ -81,7 +63,7 @@
           img {
             width: 100%;
             height: 100%;
-            border-radius: 20px;
+            border-radius: 15px;
             object-fit: cover;
           }
         }
@@ -94,7 +76,7 @@
             text-align: center;
             color: #fff;
             background-color: #9e0534;
-            border-radius: 10px;
+            border-radius: 15px;
             transition: background-color 0.3s;
             text-transform: uppercase;
 
@@ -117,11 +99,9 @@
 
 #gallery_section {
   background-color: #bfdfff;
-  padding: 30px;
   .container {
     .title {
       color: #014181;
-      padding: 15px;
       p {
         font-size: 35px;
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -163,11 +143,9 @@
 
 #services_section {
   background-color: #014181;
-  padding: 30px;
   .container {
     .title {
       color: #bfdfff;
-      padding: 15px;
       p {
         font-size: 35px;
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -178,50 +156,43 @@
         border: 1px solid;
       }
     }
-  }
-  .services_grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 45px;
-    padding-block: 30px;
-    .service {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: #bfdfff;
-      gap: 30px;
-      padding: 20px;
-      width: 500px;
-      height: 250px;
-      .image {
-        background-color: #9e0534;
-        padding: 30px;
-        width: 50%;
-      }
-      .service_text {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        .service_title {
-          text-transform: uppercase;
+    .services_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 45px;
+      padding-block: 45px;
+      .service {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        background-color: #bfdfff;
+        gap: 30px;
+        padding: 20px;
+        border-radius: 15px;
+        .image {
+          background-color: #9e0534;
+          border-radius: 15px;
+          padding: 30px;
         }
-        .button_class {
-          .btn {
-            display: inline-block;
-            padding: 15px 20px;
-            font-size: 1.1em;
-            color: #fff;
-            background-color: #9e0534;
-            border-radius: 10px;
-            transition: background-color 0.3s;
+        .service_text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+          .service_title {
             text-transform: uppercase;
-
-            &:hover {
-              background-color: #014181;
-            }
+            font-size: 15px;
+          }
+          .service_about {
+          }
+          .button_class {
+            margin-bottom: 0;
           }
         }
+      }
+      .service:hover {
+        transform: translateY(-15px);
+        transition: transform 0.3s;
       }
     }
   }
