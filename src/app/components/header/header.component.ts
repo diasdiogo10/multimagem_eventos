@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink, RouterOutlet, Router } from '@angular/router';
 import { SmoothScrollService } from '../../smooth-scroll.service';
-import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -28,5 +27,8 @@ export class HeaderComponent {
 
   scrollToGallerySection(): void {
     this.smoothScrollService.scrollToAnchor('gallery_section');
+  }
+  scrollToFooter(): void {
+    this.smoothScrollService.scrollToAnchor('footer');
   }
 }

@@ -59,31 +59,12 @@
           }
         }
         .image {
-          height: 270px;
+          height: 300px;
           img {
             width: 100%;
             height: 100%;
             border-radius: 15px;
             object-fit: cover;
-          }
-        }
-        .button_class {
-          .btn {
-            display: inline-block;
-            width: 100%;
-            padding: 15px 20px;
-            font-size: 1.1em;
-            text-align: center;
-            color: #fff;
-            background-color: #9e0534;
-            border-radius: 15px;
-            transition: background-color 0.3s;
-            text-transform: uppercase;
-
-            &:hover {
-              background-color: #bfdfff;
-              color: #014181;
-            }
           }
         }
         .services {
@@ -92,6 +73,10 @@
             text-align: left;
           }
         }
+      }
+      .item:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
       }
     }
   }
@@ -117,7 +102,7 @@
       padding-block: 30px;
       swiper-slide {
         img {
-          height: 300px;
+          height: 350px;
           border-radius: 20px;
         }
       }
@@ -177,7 +162,7 @@
         .service_text {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          text-align: center;
           gap: 15px;
           .service_title {
             text-transform: uppercase;
@@ -191,8 +176,8 @@
         }
       }
       .service:hover {
-        transform: translateY(-15px);
-        transition: transform 0.3s;
+        transform: translateY(-30px);
+        transition: transform 0.6s;
       }
     }
   }
