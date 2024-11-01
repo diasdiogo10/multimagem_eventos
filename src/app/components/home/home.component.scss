@@ -23,42 +23,31 @@
 #vehicles_section {
   background-color: #014181;
   .container {
-    .title {
+    .section_title {
       color: #bfdfff;
-      p {
-        font-size: 35px;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-      }
-      hr {
-        border: 1px solid;
-      }
     }
     .vehicles {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 75px;
       padding-block: 45px;
-      .item {
+      .vehicle {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        background-color: #014181;
-        .name {
+        .vehicle_name {
           p {
             color: #bfdfff;
             font-size: 35px;
             font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
               sans-serif;
             text-transform: uppercase;
-            text-align: left;
             span {
               font-size: 40px;
             }
           }
         }
-        .image {
+        .vehicle_image {
           height: 300px;
           img {
             width: 100%;
@@ -67,16 +56,15 @@
             object-fit: cover;
           }
         }
-        .services {
+        .vehicle_services {
           p {
             color: white;
-            text-align: left;
           }
         }
       }
-      .item:hover {
-        transform: scale(1.1);
-        transition: transform 0.5s;
+      .vehicle:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
       }
     }
   }
@@ -85,41 +73,20 @@
 #gallery_section {
   background-color: #bfdfff;
   .container {
-    .title {
+    .section_title {
       color: #014181;
-      p {
-        font-size: 35px;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-      }
-      hr {
-        border: 1px solid;
-      }
     }
-    swiper-container {
-      align-items: center;
-      padding-block: 30px;
-      swiper-slide {
-        img {
-          height: 350px;
-          border-radius: 20px;
-        }
-      }
-    }
-    .button_class {
-      .btn {
-        display: inline-block;
-        padding: 15px 20px;
-        font-size: 1.1em;
-        color: #fff;
-        background-color: #9e0534;
-        border-radius: 10px;
-        transition: background-color 0.3s;
-        text-transform: uppercase;
+    .moments_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 75px;
+      padding-block: 45px;
 
-        &:hover {
-          background-color: #014181;
+      .moment_item {
+        img {
+          height: 300px;
+          border-radius: 15px;
+          object-fit: cover;
         }
       }
     }
@@ -129,32 +96,22 @@
 #services_section {
   background-color: #014181;
   .container {
-    .title {
+    .section_title {
       color: #bfdfff;
-      p {
-        font-size: 35px;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-      }
-      hr {
-        border: 1px solid;
-      }
     }
-    .services_grid {
+    .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 45px;
       padding-block: 45px;
       .service {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
+        display: flex;
         background-color: #bfdfff;
         gap: 30px;
         padding: 20px;
         border-radius: 15px;
-        .image {
+        transition: transform 0.3s;
+        .service_image {
           background-color: #9e0534;
           border-radius: 15px;
           padding: 30px;
@@ -162,7 +119,6 @@
         .service_text {
           display: flex;
           flex-direction: column;
-          text-align: center;
           gap: 15px;
           .service_title {
             text-transform: uppercase;
@@ -170,14 +126,10 @@
           }
           .service_about {
           }
-          .button_class {
-            margin-bottom: 0;
-          }
         }
       }
       .service:hover {
-        transform: translateY(-30px);
-        transition: transform 0.6s;
+        transform: scale(1.05);
       }
     }
   }

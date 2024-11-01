@@ -11,6 +11,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-block: 15px;
+    img {
+      height: 40px;
+    }
     .menu nav ul {
       display: flex;
       flex-direction: row;

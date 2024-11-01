@@ -3,20 +3,66 @@
   .container {
     display: flex;
     justify-content: space-between;
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
+      p {
+        color: #014181;
+        text-transform: uppercase;
+        font-size: 75px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-align: left;
+        vertical-align: middle;
+
+        &:last-child {
+          color: #9e0534;
+          font-size: 90px;
+        }
+      }
+    }
     form {
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 50%;
-
+      .title_form {
+        font-size: 20px;
+        color: #014181;
+        text-align: center;
+        text-transform: uppercase;
+      }
       .inputs {
         display: flex;
         flex-direction: column;
         gap: 15px;
         margin-bottom: 15px;
-      }
+        .input {
+          display: flex;
+          flex-direction: column;
 
+          label {
+            margin-bottom: 5px;
+            color: #014181;
+            font-size: 15px;
+            text-transform: uppercase;
+          }
+
+          input,
+          textarea {
+            padding: 10px;
+            border: 2px solid #014181;
+            border-radius: 10px;
+            outline: none;
+          }
+
+          input:focus,
+          textarea:focus {
+            border-color: #014181;
+          }
+        }
+      }
       button {
         height: 45px;
         width: 100%;
@@ -29,63 +75,10 @@
         &:disabled {
           cursor: not-allowed;
         }
-
         &:hover:not(:disabled) {
           cursor: pointer;
         }
       }
     }
   }
-}
-
-.input {
-  display: flex;
-  flex-direction: column;
-
-  label {
-    margin-bottom: 5px;
-    color: #014181;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-
-  input,
-  textarea {
-    padding: 10px;
-    border: 2px solid #014181;
-    border-radius: 10px;
-    outline: none;
-  }
-
-  input:focus,
-  textarea:focus {
-    border-color: #014181;
-  }
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  p {
-    color: #014181;
-    text-transform: uppercase;
-    font-size: 75px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    text-align: left;
-    vertical-align: middle;
-
-    &:last-child {
-      color: #9e0534;
-      font-size: 90px;
-    }
-  }
-}
-
-.title_form {
-  font-size: 20px;
-  color: #014181;
-  text-align: center;
-  text-transform: uppercase;
 }

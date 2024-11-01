@@ -32,19 +32,14 @@ ul {
   padding-block: 45px;
 }
 
-.button_class {
-  .btn {
-    display: inline-block;
-    padding: 15px 20px;
-    font-size: 1.1em;
-    color: #fff;
-    background-color: #9e0534;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+.section_title {
+  p {
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-transform: uppercase;
-
-    &:hover {
-      background-color: #014181;
-    }
+    margin-bottom: 15px;
+  }
+  hr {
+    border: 1px solid;
   }
 }
