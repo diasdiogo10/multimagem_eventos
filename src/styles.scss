@@ -43,3 +43,20 @@ ul {
     border: 1px solid;
   }
 }
+
+button {
+  height: 45px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: #9e0534;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid #9e0534;
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &:hover:not(:disabled) {
+    cursor: pointer;
+  }
+}
