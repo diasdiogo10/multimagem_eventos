@@ -92,12 +92,20 @@
       gap: 15px;
       padding-block: 15px;
       .moment_item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         img {
           height: 100%;
           width: 100%;
           object-fit: cover;
           border-radius: 15px;
           border: 2px solid #014181;
+          transition: transform 0.3s ease;
+        }
+        &:hover img {
+          transform: scale(1.1);
         }
       }
     }
@@ -108,21 +116,6 @@
     .moments_grid .moment_item:nth-child(3) {
       grid-row: span 2;
       grid-column: span 1;
-    }
-    .more_moments_grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 15px;
-      padding-block: 15px;
-      .moment_item {
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 15px;
-          border: 2px solid #014181;
-        }
-      }
     }
     .more_moments_grid .moment_item:nth-child(1) {
       grid-row: span 2;
