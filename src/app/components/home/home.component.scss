@@ -88,7 +88,7 @@
     }
     .moments_grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 15px;
       padding-block: 15px;
       .moment_item {
@@ -97,6 +97,7 @@
           width: 100%;
           object-fit: cover;
           border-radius: 15px;
+          border: 2px solid #014181;
         }
       }
     }
@@ -104,9 +105,13 @@
       grid-row: span 2;
       grid-column: span 2;
     }
+    .moments_grid .moment_item:nth-child(3) {
+      grid-row: span 2;
+      grid-column: span 1;
+    }
     .more_moments_grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 15px;
       padding-block: 15px;
       .moment_item {
@@ -115,8 +120,13 @@
           width: 100%;
           object-fit: cover;
           border-radius: 15px;
+          border: 2px solid #014181;
         }
       }
+    }
+    .more_moments_grid .moment_item:nth-child(1) {
+      grid-row: span 2;
+      grid-column: span 1;
     }
     .more_moments_grid .moment_item:nth-child(3) {
       grid-row: span 2;
