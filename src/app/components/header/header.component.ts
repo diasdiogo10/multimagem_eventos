@@ -37,4 +37,7 @@ export class HeaderComponent {
   scrollToHeroSection(): void {
     this.smoothScrollService.scrollToAnchor('hero_section');
   }
+  scrollToVehicleHeroSection(): void {
+    this.smoothScrollService.scrollToAnchor('vehicle_hero_section');
+  }
 }

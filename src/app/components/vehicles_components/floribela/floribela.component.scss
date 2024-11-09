@@ -1,0 +1,73 @@
+#vehicle_hero_section {
+  height: 85vh;
+  width: 100%;
+  background-image: url(../../../../assets/Floribela/Foto_2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+#vehicle_about_section {
+  background-color: #dcebfb;
+  .container {
+    .vehicle {
+      display: flex;
+      flex-direction: row;
+      .vahicle_name {
+        width: 50%;
+        .name {
+          font-size: 30px;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          text-transform: uppercase;
+        }
+      }
+      .informations {
+        width: 50%;
+        display: flex;
+        .title {
+          font-size: 15px;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+#gallery_section {
+  background-color: #dcebfb;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding-block: 90px;
+  .image_1 {
+    height: 450px;
+    width: 60%;
+    background-image: url(../../../../assets/Floribela/Flóribela.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .image_2 {
+    height: 450px;
+    width: 60%;
+    background-image: url(../../../../assets/Floribela/Foto_3.webp);
+    background-size: cover;
+    align-self: flex-end;
+    background-position: center;
+  }
+  .image_3 {
+    height: 450px;
+    width: 60%;
+    background-image: url(../../../../assets/Floribela/Foto_4.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .image_4 {
+    height: 450px;
+    width: 60%;
+    background-image: url(../../../../assets/Floribela/Foto_6.webp);
+    background-size: cover;
+    align-self: flex-end;
+    background-position: center;
+  }
+}
