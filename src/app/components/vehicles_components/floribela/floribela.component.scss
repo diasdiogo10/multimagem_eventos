@@ -16,9 +16,12 @@
       .vahicle_name {
         width: 50%;
         .name {
-          font-size: 30px;
-          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-          text-transform: uppercase;
+          p {
+            font-size: 300px;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+              sans-serif;
+            text-transform: uppercase;
+          }
         }
       }
       .informations {
@@ -40,34 +43,69 @@
   flex-direction: column;
   gap: 90px;
   padding-block: 90px;
-  .image_1 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Floribela/Flóribela.jpg);
-    background-size: cover;
-    background-position: center;
+  .image {
+    display: flex;
+    gap: 30px;
+    .image_1 {
+      height: 450px;
+      width: 60%;
+      background-image: url(../../../../assets/Floribela/Foto_3.webp);
+      background-size: cover;
+      background-position: center;
+      border-top-right-radius: 300px;
+      border-bottom-right-radius: 300px;
+    }
+    .image_2 {
+      height: 450px;
+      width: 60%;
+      background-image: url(../../../../assets/Floribela/Flóribela.jpg);
+      background-size: cover;
+      background-position: center;
+      border-top-left-radius: 300px;
+      border-bottom-left-radius: 300px;
+    }
+    .image_3 {
+      height: 450px;
+      width: 60%;
+      background-image: url(../../../../assets/Floribela/Foto_4.webp);
+      background-size: cover;
+      background-position: center;
+      border-top-right-radius: 300px;
+      border-bottom-right-radius: 300px;
+    }
+    .image_4 {
+      height: 450px;
+      width: 60%;
+      background-image: url(../../../../assets/Floribela/Foto_66.webp);
+      background-size: cover;
+      align-self: flex-end;
+      background-position: center;
+      border-top-left-radius: 300px;
+      border-bottom-left-radius: 300px;
+    }
+    .review {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      background-color: #014181;
+      max-width: 35%;
+      height: 250px;
+      color: #dcebfb;
+      padding: 30px;
+      border-radius: 15px;
+      .author {
+        font-size: 20px;
+      }
+      .avaliation {
+        font-size: 20px;
+      }
+    }
   }
-  .image_2 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Floribela/Foto_3.webp);
-    background-size: cover;
-    align-self: flex-end;
-    background-position: center;
+  .image:nth-child(2) {
+    flex-direction: row-reverse;
   }
-  .image_3 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Floribela/Foto_4.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .image_4 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Floribela/Foto_6.webp);
-    background-size: cover;
-    align-self: flex-end;
-    background-position: center;
+  .image:nth-child(4) {
+    flex-direction: row-reverse;
   }
 }
