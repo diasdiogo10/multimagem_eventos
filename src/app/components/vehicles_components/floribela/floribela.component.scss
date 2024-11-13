@@ -4,108 +4,41 @@
   background-image: url(../../../../assets/Floribela/Foto_2.webp);
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   opacity: 0.9;
 }
-
-#vehicle_about_section {
-  background-color: #dcebfb;
-  .container {
-    .vehicle {
-      display: flex;
-      flex-direction: row;
-      .vahicle_name {
-        width: 50%;
-        .name {
-          p {
-            font-size: 300px;
-            font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
-              sans-serif;
-            text-transform: uppercase;
-          }
-        }
-      }
-      .informations {
-        width: 50%;
-        display: flex;
-        .title {
-          font-size: 15px;
-          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-          text-transform: uppercase;
-        }
-      }
-    }
-  }
-}
-
 #gallery_section {
   background-color: #dcebfb;
-  display: flex;
-  flex-direction: column;
-  gap: 90px;
-  padding-block: 90px;
-  .image {
-    display: flex;
-    gap: 30px;
-    .image_1 {
-      height: 450px;
-      width: 60%;
-      background-image: url(../../../../assets/Floribela/Foto_3.webp);
-      background-size: cover;
-      background-position: center;
-      border-top-right-radius: 300px;
-      border-bottom-right-radius: 300px;
-    }
-    .image_2 {
-      height: 450px;
-      width: 60%;
-      background-image: url(../../../../assets/Floribela/Flóribela.jpg);
-      background-size: cover;
-      background-position: center;
-      border-top-left-radius: 300px;
-      border-bottom-left-radius: 300px;
-    }
-    .image_3 {
-      height: 450px;
-      width: 60%;
-      background-image: url(../../../../assets/Floribela/Foto_4.webp);
-      background-size: cover;
-      background-position: center;
-      border-top-right-radius: 300px;
-      border-bottom-right-radius: 300px;
-    }
-    .image_4 {
-      height: 450px;
-      width: 60%;
-      background-image: url(../../../../assets/Floribela/Foto_66.webp);
-      background-size: cover;
-      align-self: flex-end;
-      background-position: center;
-      border-top-left-radius: 300px;
-      border-bottom-left-radius: 300px;
-    }
-    .review {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 10px;
-      background-color: #014181;
-      max-width: 35%;
-      height: 250px;
-      color: #dcebfb;
-      padding: 30px;
-      border-radius: 15px;
-      .author {
-        font-size: 20px;
-      }
-      .avaliation {
-        font-size: 20px;
+  .container {
+    .about {
+      p {
+        font-size: 30px;
+        text-align: justify;
+        color: #014181;
+        margin-bottom: 30px;
       }
     }
   }
-  .image:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-  .image:nth-child(4) {
-    flex-direction: row-reverse;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+    .item {
+      height: 450px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .left_image img {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .right_image img {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
   }
 }

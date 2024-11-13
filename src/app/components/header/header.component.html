@@ -11,14 +11,25 @@
           <li>
             <a (click)="scrollToAboutSection()"><strong>Sobre Nós</strong></a>
           </li>
-          <li>
-            <a (click)="scrollToVehiclesSection()"><strong>Veículos</strong></a>
+          <li class="menu-item">
+            <a (click)="scrollToVehiclesSection()" class="menu-link"
+              ><strong>Veículos</strong></a
+            >
+            <div class="vehicles">
+              <a routerLink="/agostinha"><strong>Agostinha</strong></a>
+              <a routerLink="/arrojado"><strong>Arrojado</strong></a>
+              <a routerLink="/balcao-bar"><strong>Balcão Bar</strong></a>
+              <a routerLink="/bike"><strong>Bike</strong></a>
+              <a routerLink="/eugenia"><strong>Eugénia</strong></a>
+              <a routerLink="/floribela"><strong>Flóribela</strong></a>
+              <a routerLink="/ligeirinho"><strong>Ligeirinho</strong></a>
+            </div>
           </li>
           <li>
             <a (click)="scrollToServicesSection()"><strong>Serviços</strong></a>
           </li>
           <li>
-            <a (click)="scrollToGallerySection()"><strong>Galeria</strong></a>
+            <a (click)="scrollToAwardsSection()"><strong>Prémios</strong></a>
           </li>
           <li>
             <a (click)="scrollToContactForm()"><strong>Orçamento</strong></a>

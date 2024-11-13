@@ -7,65 +7,38 @@
   background-repeat: no-repeat;
   opacity: 0.9;
 }
-
-#vehicle_about_section {
+#gallery_section {
   background-color: #dcebfb;
   .container {
-    .vehicle {
-      display: flex;
-      flex-direction: row;
-      .vahicle_name {
-        width: 50%;
-        .name {
-          font-size: 30px;
-          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-          text-transform: uppercase;
-        }
-      }
-      .informations {
-        width: 50%;
-        display: flex;
-        .title {
-          font-size: 15px;
-          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-          text-transform: uppercase;
-        }
+    .about {
+      p {
+        font-size: 30px;
+        text-align: justify;
+        color: #014181;
+        margin-bottom: 30px;
       }
     }
   }
-}
-
-#gallery_section {
-  background-color: #dcebfb;
-  display: flex;
-  flex-direction: column;
-  gap: 90px;
-  padding-block: 90px;
-  .image_1 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Floribela/Flóribela.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .image_2 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Floribela/Foto_3.webp);
-    background-size: cover;
-    align-self: flex-end;
-  }
-  .image_3 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Floribela/Foto_4.webp);
-    background-size: cover;
-  }
-  .image_4 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Floribela/Foto_5.webp);
-    background-size: cover;
-    align-self: flex-end;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+    .item {
+      height: 450px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .left_image img {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .right_image img {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
   }
 }

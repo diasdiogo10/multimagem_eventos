@@ -6,68 +6,34 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
+  opacity: 0.7;
 }
-
-#vehicle_about_section {
+#gallery_section {
   background-color: #dcebfb;
   .container {
-    .vehicle {
-      display: flex;
-      flex-direction: row;
-      .vahicle_name {
-        width: 50%;
-        .name {
-          font-size: 30px;
-          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-          text-transform: uppercase;
-        }
+    .about {
+      p {
+        font-size: 30px;
+        text-align: justify;
+        color: #014181;
+        margin-bottom: 30px;
       }
-      .informations {
-        width: 50%;
-        display: flex;
-        .title {
-          font-size: 15px;
-          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-          text-transform: uppercase;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+      margin-block: 45px;
+      .item {
+        height: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 15px;
+          border: 2px solid #dcebfb;
         }
       }
     }
-  }
-}
-
-#gallery_section {
-  background-color: #dcebfb;
-  display: flex;
-  flex-direction: column;
-  gap: 90px;
-  padding-block: 90px;
-  .image_1 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Agostinha/Foto_1.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .image_2 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Agostinha/Foto_2.webp);
-    background-size: cover;
-    align-self: flex-end;
-  }
-  .image_3 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets/Agostinha/Foto_3.webp);
-    background-size: cover;
-  }
-  .image_4 {
-    height: 450px;
-    width: 60%;
-    background-image: url(../../../../assets//Agostinha/Foto_5.jpg);
-    background-size: cover;
-    background-position: center;
-    align-self: flex-end;
   }
 }

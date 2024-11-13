@@ -7,6 +7,7 @@ import { BikeComponent } from './components/vehicles_components/bike/bike.compon
 import { BoaGiraComponent } from './components/vehicles_components/boa-gira/boa-gira.component';
 import { EugeniaComponent } from './components/vehicles_components/eugenia/eugenia.component';
 import { LigeirinhoComponent } from './components/vehicles_components/ligeirinho/ligeirinho.component';
+import { ArrojadoComponent } from './components/vehicles_components/arrojado/arrojado.component';
 
 export const routes: Routes = [
   {
@@ -40,5 +41,9 @@ export const routes: Routes = [
   {
     path: 'ligeirinho',
     component: LigeirinhoComponent,
+  },
+  {
+    path: 'arrojado',
+    component: ArrojadoComponent,
   },
 ];
