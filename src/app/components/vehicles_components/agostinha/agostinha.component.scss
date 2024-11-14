@@ -1,39 +1,44 @@
 #vehicle_hero_section {
   height: 85vh;
   width: 100%;
-  background-image: url(../../../../assets/Agostinha/Foto_4.jpg);
+  background-image: url(../../../../assets/Floribela/Foto_2.webp);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 #gallery_section {
-  background-color: #dcebfb;
+  background-color: #d9e7f2;
   .container {
     .about {
       p {
         font-size: 30px;
         text-align: justify;
-        color: #014181;
-        margin-bottom: 30px;
+        color: #2c4f6d;
       }
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 60px;
-      margin-block: 45px;
-      .item {
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+    margin-block: 30px;
+    .item {
+      height: 450px;
+      img {
         height: 100%;
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 15px;
-          border: 2px solid #dcebfb;
-        }
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
       }
+    }
+    .left_image img {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .right_image img {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
     }
   }
 }

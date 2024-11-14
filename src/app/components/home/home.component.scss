@@ -9,13 +9,13 @@
 }
 
 #about_section {
-  background-color: #dcebfb;
+  background-color: #d9e7f2;
   .container {
     padding-block: 60px;
     p {
       font-size: 30px;
       text-align: justify;
-      color: #014181;
+      color: #2c4f6d;
       margin-bottom: 30px;
       @media (max-width: 1024px) {
         font-size: 16px;
@@ -26,10 +26,10 @@
 }
 
 #vehicles_section {
-  background-color: #014181;
+  background-color: #2c4f6d;
   .container {
     .section_title {
-      color: #dcebfb;
+      color: rgb(245, 250, 255);
     }
     .vehicles {
       display: grid;
@@ -43,7 +43,7 @@
         transition: transform 0.3s;
         .vehicle_name {
           p {
-            color: #dcebfb;
+            color: rgb(245, 250, 255);
             font-size: 35px;
             font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
               sans-serif;
@@ -62,15 +62,14 @@
               width: 100%;
               height: 100%;
               border-radius: 15px;
-              border: 2px solid #dcebfb;
-              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+              border: 2px solid rgb(245, 250, 255);
               object-fit: cover;
             }
           }
         }
         .vehicle_services {
           p {
-            color: white;
+            color: rgb(245, 250, 255);
           }
         }
       }
@@ -79,36 +78,17 @@
       }
       .vehicle_image:hover {
         border-radius: 15px;
-        box-shadow: 0px 4px 15px #dcebfb;
-      }
-    }
-  }
-}
-
-#awards_section {
-  background-color: #dcebfb;
-  .container {
-    .awards_grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 30px;
-      .award {
-        width: 100%;
-        height: 100%;
-        img {
-          width: 100%;
-          height: 100%;
-        }
+        box-shadow: 0px 4px 15px rgb(245, 250, 255);
       }
     }
   }
 }
 
 #services_section {
-  background-color: #014181;
+  background-color: #d9e7f2;
   .container {
     .section_title {
-      color: #dcebfb;
+      color: #2c4f6d;
     }
     .services {
       display: grid;
@@ -117,7 +97,7 @@
       padding-block: 45px;
       .service {
         display: flex;
-        background-color: #dcebfb;
+        background-color: #2c4f6d;
         gap: 30px;
         padding: 20px;
         border-radius: 15px;
@@ -133,11 +113,34 @@
           .service_title {
             text-transform: uppercase;
             font-size: 18px;
-            color: #014181;
+            color: #d9e7f2;
           }
           .service_about {
-            color: #014181;
+            color: #d9e7f2;
           }
+        }
+      }
+    }
+  }
+}
+
+#awards_section {
+  background-color: #2c4f6d;
+  .container {
+    .section_title {
+      color: rgb(245, 250, 255);
+    }
+    .awards_grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
+      padding-block: 45px;
+      .award {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
     }

@@ -20,10 +20,4 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class HomeComponent {
-  showMoreMoments: boolean = false;
-
-  toggleMoreMoments() {
-    this.showMoreMoments = !this.showMoreMoments;
-  }
-}
+export class HomeComponent {}
