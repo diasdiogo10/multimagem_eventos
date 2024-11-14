@@ -13,7 +13,6 @@ import { CommonModule } from '@angular/common';
     ContactFormComponent,
     FooterComponent,
     RouterLink,
-    RouterOutlet,
     CommonModule,
   ],
   templateUrl: './home.component.html',

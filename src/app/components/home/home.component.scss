@@ -11,7 +11,7 @@
 #about_section {
   background-color: #d9e7f2;
   .container {
-    padding-block: 60px;
+    padding: 100px;
     p {
       font-size: 30px;
       text-align: justify;
@@ -67,9 +67,14 @@
             }
           }
         }
-        .vehicle_services {
-          p {
-            color: rgb(245, 250, 255);
+        .vehicle_info {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .vehicle_services {
+            p {
+              color: rgb(245, 250, 255);
+            }
           }
         }
       }
@@ -97,6 +102,7 @@
       padding-block: 45px;
       .service {
         display: flex;
+        flex-direction: column;
         background-color: #2c4f6d;
         gap: 30px;
         padding: 20px;
@@ -109,6 +115,7 @@
         .service_text {
           display: flex;
           flex-direction: column;
+          text-align: center;
           gap: 20px;
           .service_title {
             text-transform: uppercase;
