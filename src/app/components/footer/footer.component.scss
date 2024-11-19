@@ -9,7 +9,8 @@ footer {
 .title {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  align-items: center;
+  gap: 7px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
